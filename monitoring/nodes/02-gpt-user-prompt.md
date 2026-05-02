@@ -1,0 +1,1 @@
+={{ 'Unternehmen: ' + $json.name + '\nBranche: ' + $json.branche + '\nKontext: ' + $json.kontext + '\n\nPosts (' + $json.postCount + ' in den letzten 24h):\n' + ($json.posts.length > 0 ? $json.posts.map((p, i) => (i+1) + '. ' + p.text + '\nDatum: ' + p.date + '\nLikes: ' + p.likes + ', Kommentare: ' + p.comments).join('\n\n') : 'Keine Posts gefunden.') }}
